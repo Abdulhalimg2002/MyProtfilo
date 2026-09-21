@@ -1,98 +1,365 @@
-import Imag from '../Imag';
-import Title from '../Title';
-import Prag from '../Prag';
-import AnimatedSection from '../Anmation/AnimatedSection';
+import { motion } from "framer-motion";
+
+import Imag from "../Imag";
+import Title from "../Title";
+import Prag from "../Prag";
+import AnimatedSection from "../Anmation/AnimatedSection";
+
+const languages = ["Arabic", "English"];
 
 const Index = () => {
   return (
-    
-    <div
-  id="About"
-  className="mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 items-start gap-6 sm:gap-8 md:gap-12 px-4 sm:px-5 lg:px-8 py-8"
->
-  {/* الصورة */}
-  <AnimatedSection direction="left" stagger={0.2}>
-    <div className="flex justify-center items-center w-full">
-      <Imag
-        src="/d.png.jpg"
-        alt="Profile"
+    <section
+      id="About"
+      className="
+        w-full
+        overflow-hidden
+        px-4
+        sm:px-6
+        lg:px-8
+        py-12
+        sm:py-16
+        md:py-20
+      "
+    >
+      <div
         className="
-          w-full 
-          max-w-[280px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[500px]
-          h-auto 
-          max-h-[350px] sm:max-h-[400px] md:max-h-[600px] lg:max-h-[700px] 
-          object-cover 
-          object-center 
-          rounded-3xl 
-          shadow-lg
-          transition-all duration-300
+          mx-auto
+          w-full
+          max-w-screen-xl
+          grid
+          grid-cols-1
+          lg:grid-cols-[minmax(280px,420px)_minmax(0,1fr)]
+          items-center
+          gap-10
+          md:gap-12
+          lg:gap-16
         "
-      />
-    </div>
-  </AnimatedSection>
-
-  {/* النصوص */}
-  <AnimatedSection direction="right" stagger={0.2}>
-    <div className="flex flex-col justify-center text-center md:text-left space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-8">
-
-      {/* About */}
-      <div>
-        <Title className="mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">About Me:</Title>
-        <Prag className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed md:text-left">
-         Full-Stack Software Engineer specializing in React, Next.js, and Node.js, with hands-on experience building modern web applications from concept to production.
-
-I have worked on AI-powered applications, e-commerce platforms, and booking websites, with experience in PostgreSQL, MySQL, and MongoDB. I’m comfortable building RESTful APIs, implementing authentication using JWT and OAuth, integrating services such as Stripe, and structuring applications using clean architecture patterns such as MVC.
-
-My projects include an AI-powered Travel Plans application and a full-stack E-commerce platform, with a strong focus on user experience, performance, scalability, and maintainable code. I also have experience delivering web solutions for clients and working across both frontend and backend development.
-
-I enjoy learning new technologies, solving practical problems, and turning ideas into working products. I am currently looking for a Frontend or Full-Stack Software Engineer role where I can contribute to a product-focused team, gain real-world experience, and continue growing as a developer.
-
-        </Prag>
-      </div>
-
-      {/* Based in */}
-      <div className="border font-bold border-gray-700 p-3 sm:p-4 rounded-lg">
-        <Title className="mb-1 text-xl  sm:text-2xl md:text-3xl">Based in:</Title>
-        <Prag className="text-sm sm:text-base md:text-lg md:text-left">
-          Istanbul, Türkiye / Open to Relocate
-        </Prag>
-      </div>
-
-      {/* Education */}
-      <div className="border border-gray-700 p-3 sm:p-4 rounded-lg">
-        <Title className="mb-1 text-xl sm:text-2xl  md:text-3xl">Education:</Title>
-        <div className="space-y-1">
-          <Prag className="text-sm sm:text-base md:text-lg md:text-left">Bachelor’s Degree in Software Engineering</Prag>
-          <Prag className="text-sm sm:text-base md:text-lg md:text-left">Üsküdar University — Istanbul, Türkiye</Prag>
-          <Prag className="text-sm sm:text-base md:text-lg md:text-left">Graduated: 2025 • GPA: 3.27 / 4.00</Prag>
-        </div>
-      </div>
-
-      {/* Languages */}
-      <div className="border border-gray-700 p-3 sm:p-4 rounded-lg">
-        <Title className="mb-1 text-xl   sm:text-2xl md:text-3xl">Languages:</Title>
-        <div className="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-3">
-          {['Arabic', 'English'].map(lang => (
-            <span
-              key={lang}
-              className="px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm md:text-sm lg:text-base font-bold bg-gray-800 text-white hover:bg-[#3396D3] transition-colors"
+      >
+        {/* ================= IMAGE ================= */}
+        <AnimatedSection direction="left" stagger={0.2}>
+          <div className="flex justify-center items-center w-full">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+              }}
+              whileHover={{
+                scale: 1.02,
+              }}
+              className="
+                relative
+                w-full
+                max-w-[280px]
+                sm:max-w-[340px]
+                md:max-w-[380px]
+                lg:max-w-[420px]
+              "
             >
-              {lang}
-            </span>
-          ))}
-        </div>
+              {/* Glow */}
+              <div
+                className="
+                  absolute
+                  -inset-2
+                  rounded-3xl
+                  bg-[#3396D3]/10
+                  blur-2xl
+                "
+              />
+
+              <Imag
+                src="/d.png.jpg"
+                alt="Abdul Halim Gherra - Software Engineer"
+                className="
+                  relative
+                  block
+                  w-full
+                  h-auto
+                  rounded-3xl
+                  object-cover
+                  object-center
+                  shadow-xl
+                  transition-all
+                  duration-300
+                "
+              />
+            </motion.div>
+          </div>
+        </AnimatedSection>
+
+        {/* ================= CONTENT ================= */}
+        <AnimatedSection direction="right" stagger={0.2}>
+          <div className="min-w-0 w-full flex flex-col space-y-6 sm:space-y-7">
+            
+            {/* About */}
+            <div className="min-w-0">
+              <Title
+                className="
+                  mb-4
+                  text-3xl
+                  sm:text-4xl
+                  md:text-5xl
+                  font-bold
+                  break-words
+                  text-center
+                "
+              >
+                About Me
+              </Title>
+
+              <div className="space-y-4">
+                <Prag
+                  className="
+                    text-white
+                    text-sm
+                    sm:text-base
+                    md:text-lg
+                    leading-relaxed
+                    break-words
+                  "
+                >
+                  I’m a Full-Stack Software Engineer specializing in React,
+                  Next.js, and Node.js, passionate about building modern web
+                  applications and turning ideas into practical products.
+                </Prag>
+
+                <Prag
+                  className="
+                    text-gray-300
+                    text-sm
+                    sm:text-base
+                    md:text-lg
+                    leading-relaxed
+                    break-words
+                  "
+                >
+                  I have built AI-powered applications, e-commerce platforms,
+                  and booking websites, with hands-on experience in PostgreSQL,
+                  MySQL, MongoDB, REST APIs, authentication, and third-party
+                  integrations.
+                </Prag>
+
+                <Prag
+                  className="
+                    text-gray-300
+                    text-sm
+                    sm:text-base
+                    md:text-lg
+                    leading-relaxed
+                    break-words
+                  "
+                >
+                  I enjoy solving practical problems, improving user
+                  experiences, and continuously learning new technologies while
+                  building clean and maintainable solutions.
+                </Prag>
+              </div>
+            </div>
+
+            {/* ================= INFO CARDS ================= */}
+            <div
+              className="
+                grid
+                grid-cols-1
+                sm:grid-cols-2
+                gap-4
+                w-full
+              "
+            >
+              {/* Based In */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                whileHover={{ y: -3 }}
+                className="
+                  min-w-0
+                  w-full
+                  border
+                  border-gray-700
+                  bg-gray-900/40
+                  p-4
+                  sm:p-5
+                  rounded-xl
+                  transition-colors
+                  duration-300
+                  hover:border-[#3396D3]/50
+                "
+              >
+                <Title className="mb-2 text-lg sm:text-xl md:text-2xl">
+                  Based in
+                </Title>
+
+                <Prag className="text-sm sm:text-base text-gray-300 break-words">
+                  Istanbul, Türkiye
+                </Prag>
+
+                <Prag className="text-xs sm:text-sm text-gray-400 mt-1">
+                  Open to Relocate
+                </Prag>
+              </motion.div>
+
+              {/* Education */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.5,
+                  delay: 0.1,
+                }}
+                whileHover={{ y: -3 }}
+                className="
+                  min-w-0
+                  w-full
+                  border
+                  border-gray-700
+                  bg-gray-900/40
+                  p-4
+                  sm:p-5
+                  rounded-xl
+                  transition-colors
+                  duration-300
+                  hover:border-[#3396D3]/50
+                "
+              >
+                <Title className="mb-2 text-lg sm:text-xl md:text-2xl">
+                  Education
+                </Title>
+
+                <Prag className="text-sm sm:text-base text-gray-300 break-words">
+                  Software Engineering
+                </Prag>
+
+                <Prag className="text-xs sm:text-sm text-gray-400 mt-1 break-words">
+                  Üsküdar University • 2025
+                </Prag>
+
+                <Prag className="text-xs sm:text-sm text-gray-400">
+                  GPA: 3.27 / 4.00
+                </Prag>
+              </motion.div>
+            </div>
+
+            {/* ================= LANGUAGES ================= */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: 0.2,
+              }}
+              className="
+                w-full
+                border
+                border-gray-700
+                bg-gray-900/40
+                p-4
+                sm:p-5
+                rounded-xl
+              "
+            >
+              <Title className="mb-3 text-lg sm:text-xl md:text-2xl">
+                Languages
+              </Title>
+
+              <div className="flex flex-wrap gap-2 sm:gap-3">
+                {languages.map((lang, index) => (
+                  <motion.span
+                    key={lang}
+                    initial={{
+                      opacity: 0,
+                      scale: 0.8,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      scale: 1,
+                    }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 0.3,
+                      delay: 0.3 + index * 0.1,
+                    }}
+                    whileHover={{
+                      scale: 1.05,
+                    }}
+                    className="
+                      px-3
+                      sm:px-4
+                      py-1.5
+                      sm:py-2
+                      rounded-full
+                      text-xs
+                      sm:text-sm
+                      font-semibold
+                      bg-gray-800
+                      text-white
+                      border
+                      border-gray-700
+                      hover:border-[#3396D3]
+                      hover:bg-[#3396D3]/10
+                      transition-all
+                      duration-300
+                    "
+                  >
+                    {lang}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* ================= CURRENT FOCUS ================= */}
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 20,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: 0.3,
+              }}
+              className="
+                w-full
+                border
+                border-[#3396D3]/30
+                bg-[#3396D3]/5
+                p-4
+                sm:p-5
+                rounded-xl
+              "
+            >
+              <Title className="mb-2 text-lg sm:text-xl md:text-2xl">
+                Current Focus
+              </Title>
+
+              <Prag
+                className="
+                  text-sm
+                  sm:text-base
+                  text-gray-300
+                  leading-relaxed
+                  break-words
+                "
+              >
+                Building scalable web applications, exploring AI-powered
+                solutions, and improving my skills through real-world projects.
+              </Prag>
+            </motion.div>
+          </div>
+        </AnimatedSection>
       </div>
-
-      {/* Skills */}
-      {/* Add your skills section here if needed */}
-
-    </div>
-  </AnimatedSection>
-</div>
-
-
-   
-  )
-}
+    </section>
+  );
+};
 
 export default Index;

@@ -9,14 +9,15 @@ export const Navlink:Nav[]=[
         id:"About",
         name:"About",
     },
-     {
-        id:"Skills",
-        name:"skills",
-    },
+     
        {
         id:"Service",
         name:"Service",
         
+    },
+    {
+        id:"Skills",
+        name:"skills",
     },
      {
         id:"Project",
@@ -37,7 +38,7 @@ export const ProjectsS:ProjectC[]=[
         img:"/Ma.png",
         projectT:"Masaya Haneen",
         Tool:["Reat js","TypeScript","TalwindCss"],
-des:"Masaya Haneen brings the barber experience online — browse services, book appointments, view offers, and meet our expert team in one seamless platform.",
+des:"Masaya Haneen is a modern and responsive e-commerce website built with React.js, TypeScript, and Tailwind CSS. The website features a clean and intuitive user interface, allowing users to browse and purchase products with ease. It includes product listings, detailed product pages, a shopping cart, and a checkout process. The use of React.js enables dynamic content updates and smooth navigation, while TypeScript ensures type safety and improved code quality. Tailwind CSS provides a flexible and efficient styling solution, resulting in a visually appealing design that adapts seamlessly to different screen sizes. Overall, Masaya Haneen offers a user-friendly online shopping experience with a focus on performance and aesthetics.",
 href:["https://massaya-haneen.netlify.app/","https://github.com/Abdulhalimg2002/Massaya-Haneen"],
 Text:["Live Demo","Github"],
 
@@ -49,7 +50,7 @@ Text:["Live Demo","Github"],
         img:"/image.png",
         projectT:"Todo",
         Tool:["Reat js","TypeScript","TalwindCss","Rest API"],
-des:"Todo Project is a simple task management application that allows users to add, edit, and delete tasks as they complete them. The project helps users organize their daily activities and improve productivity by keeping track of tasks in an easy and efficient way.",
+des:"Todo is a simple and efficient task management application that allows users to create, organize, and track their daily tasks. Built with React.js, TypeScript, and Tailwind CSS, the app provides a clean and intuitive interface for managing tasks. Users can add new tasks, mark them as completed, and delete tasks as needed. The application also features a responsive design, ensuring a seamless experience across different devices. With its focus on simplicity and usability, Todo helps users stay organized and productive in their daily lives.",
 href:["https://abdulhalimtodo.netlify.app/","https://github.com/Abdulhalimg2002/fullstack-todo-app"],
 Text:["Live Demo","Github"],
 
@@ -133,6 +134,25 @@ export const Services:ServiceC[]=[
         description:"Creating RESTful  APIs for seamless data integration and communication.",
         icon:"🔗",
     },
+    {
+        id:"Database Management",
+        title:"Database Management",
+        description:"Designing and managing databases for efficient data storage and retrieval.",
+        icon:"🗄️",
+    },
+    {
+        id:"Version Control",
+        title:"Version Control",
+        description:"Using Git and GitHub for collaborative development and version control.",
+        icon:"🛠️",
+    },
+    {
+        id:"AI Integration",
+        title:"AI Integration",
+        description:"Integrating AI technologies into applications for enhanced functionality.",
+        icon:"🤖",
+    }
+
 
 ]
 
@@ -166,7 +186,7 @@ export const Skills:Skill[]=[
     },
     {
         id:"React",
-        name:"React",
+        name:"React.js",
        
         category:"Frontend",
         icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -176,7 +196,7 @@ export const Skills:Skill[]=[
         name:"Next.js",
        
         category:"Frontend",
-        icon:"https://images.seeklogo.com/logo-png/32/1/next-js-logo-png_seeklogo-321806.png"
+        icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
     },
     {
         id:"Tailwind CSS",
@@ -265,6 +285,7 @@ export const Skills:Skill[]=[
         id:"Express.js",
         name:"Express.js",
         category:"Backend",
+        icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
 
     },
     {
@@ -287,18 +308,7 @@ export const Skills:Skill[]=[
     icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg"
 }
 ,
-{
-    id:"Cloudinary",
-    name:"Cloudinary",
-    category:"Tools",
-    icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudinary/cloudinary-original.svg"
-},
-{
-    id:"OpenAI",
-    name:"OpenAI",
-    category:"Tools",
-    icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg"
-},
+
 {
     id:"prisma",
     name:"prisma",
@@ -309,7 +319,9 @@ export const Skills:Skill[]=[
     id:"vite",
     name:"vite",
     category:"Tools",
+    icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg"
 }
+
 
 
     

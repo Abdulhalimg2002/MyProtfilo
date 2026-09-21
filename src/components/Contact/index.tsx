@@ -29,7 +29,7 @@ const Contact = () => {
 
           {/* LinkedIn */}
           <Links
-            href="https://www.linkedin.com/in/abdulhalim-dev-98122b21b/"
+            href="https://www.linkedin.com/in/abdulhalim-gherra-98122b21b/"
             target="_blank"
             className="flex items-center gap-3 px-6 py-3 border hover:bg-[#3396D3] border-gray-600  rounded-lg  transition"
             text="LinkedIn"

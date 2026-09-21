@@ -29,7 +29,7 @@ const index = () => {
 
     {/* Subtitle */}
     <AnimatedOnScroll delay={0.3} direction="right">
-      <Prag className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl text-white max-w-2xl mx-auto">
+      <Prag className="mt-4 text-lg sm:text-base md:text-lg lg:text-xl text-white max-w-2xl mx-auto">
         I am a software & web developer
       </Prag>
     </AnimatedOnScroll>
