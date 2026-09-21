@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -6,7 +7,6 @@ import Imag from "../Imag";
 import Links from "../Links";
 import Prag from "../Prag";
 import Title from "../Title";
-import AnimatedSection from "../Anmation/AnimatedSection";
 
 const Projects = () => {
   const itemsPerPage = 6;
@@ -46,7 +46,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="scroll-mt-20 min-h-screen py-12 sm:py-16 flex flex-col items-center px-4"
+      className="scroll-mt-20 min-h-screen py-12 sm:py-16 flex flex-col items-center px-4 overflow-hidden"
     >
       {/* Section Title */}
       <Title className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-10 sm:mb-12 text-center">
@@ -66,11 +66,7 @@ const Projects = () => {
           }}
           className="w-full"
         >
-          <AnimatedSection
-            direction="right"
-            stagger={0.2}
-            className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 max-w-7xl w-full items-stretch mx-auto"
-          >
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 max-w-7xl w-full items-stretch mx-auto">
             {currentProjects.map((project) => (
               <motion.div
                 key={project.id}
@@ -140,7 +136,7 @@ const Projects = () => {
                 </div>
               </motion.div>
             ))}
-          </AnimatedSection>
+          </div>
         </motion.div>
       </AnimatePresence>
 
