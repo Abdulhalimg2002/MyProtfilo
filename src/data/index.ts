@@ -261,5 +261,56 @@ export const Skills:Skill[]=[
         category:"Tools",
         icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
     },
+    {
+        id:"Express.js",
+        name:"Express.js",
+        category:"Backend",
+
+    },
+    {
+        id:"Docker",
+        name:"Docker",
+        category:"Tools",
+        icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+    },
+    {
+        id:"Vercel",
+        name:"Vercel",
+        category:"Tools",
+        icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg"
+    }
+    ,
+{
+    id:"Netlify",
+    name:"Netlify",
+    category:"Tools",
+    icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg"
+}
+,
+{
+    id:"Cloudinary",
+    name:"Cloudinary",
+    category:"Tools",
+    icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cloudinary/cloudinary-original.svg"
+},
+{
+    id:"OpenAI",
+    name:"OpenAI",
+    category:"Tools",
+    icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg"
+},
+{
+    id:"prisma",
+    name:"prisma",
+    category:"Backend",
+    icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg"
+},
+{
+    id:"vite",
+    name:"vite",
+    category:"Tools",
+}
+
+
     
 ]

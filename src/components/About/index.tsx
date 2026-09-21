@@ -39,10 +39,14 @@ const Index = () => {
       <div>
         <Title className="mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">About Me:</Title>
         <Prag className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed md:text-left">
-          I’m a web developer and designer, graduated from Üsküdar University. 
-          I love turning ideas into practical and visually appealing websites and applications, 
-          focusing on performance and modern design. I’m always seeking new challenges to grow 
-          my skills and create innovative solutions.
+         Full-Stack Software Engineer specializing in React, Next.js, and Node.js, with hands-on experience building modern web applications from concept to production.
+
+I have worked on AI-powered applications, e-commerce platforms, and booking websites, with experience in PostgreSQL, MySQL, and MongoDB. I’m comfortable building RESTful APIs, implementing authentication using JWT and OAuth, integrating services such as Stripe, and structuring applications using clean architecture patterns such as MVC.
+
+My projects include an AI-powered Travel Plans application and a full-stack E-commerce platform, with a strong focus on user experience, performance, scalability, and maintainable code. I also have experience delivering web solutions for clients and working across both frontend and backend development.
+
+I enjoy learning new technologies, solving practical problems, and turning ideas into working products. I am currently looking for a Frontend or Full-Stack Software Engineer role where I can contribute to a product-focused team, gain real-world experience, and continue growing as a developer.
+
         </Prag>
       </div>
 
